@@ -96,11 +96,11 @@ After the change :
 
 Pages on the website are working properly :
 
-![img.png](assets/Validators.jpg)
-![img.png](assets/Dashboard.jpg)
-![img.png](assets/Validator.jpg)
-![img.png](assets/Deployments.jpg)
-![img.png](assets/Calculators.jpg)
+![img.png](assets/Validators.PNG)
+![img.png](assets/Dashboard.PNG)
+![img.png](assets/Validator.png)
+![img.png](assets/Deployments.png)
+![img.png](assets/Calculators.PNG)
 
 Mobile application working properly : 
 
@@ -110,7 +110,7 @@ Mobile application working properly :
 Mobile application working properly : 
 
 ![img.png](assets/notification.jpg)
-![img.png](assets/notifications.jpg
+![img.png](assets/notifications.jpg)
 
 ## Overall Impression of usage testing
 
@@ -125,26 +125,123 @@ Project functionality meets/exceeds acceptance criteria and operates without err
 
 # Unit / Automated Testing
 
-After installing the requirements and adding the necessary configuration settings by following the given instructions on the project's README, the reviewer was able to run the tests under the `RFPPortal_Tests` directory. All positive, negative, and additional path tests were observed to run successfully.
+After installing the requirements and adding the necessary configuration settings, following the instructions given in the README in the project, the tests were run. One error was received during the tests. 
 
-```bash
-cd RFPPortal_Tests
-dotnet test --filter DisplayName~Authorization_Tests
+```
+   RUNS  Tests\Unit\ExampleTest      
+  • basic test
+
+  Tests:  21 pending
+
+   PASS  Tests\Unit\ExampleTest      
+  ✓ basic test
+
+   RUNS  Tests\Feature\DelegatorsTest
+  • get delegators list success      
+
+  Tests:  1 passed, 20 pending       
+
+   RUNS  Tests\Feature\DelegatorsTest
+  • get delegators list error1
+
+  Tests:  2 passed, 19 pending
+
+   RUNS  Tests\Feature\DelegatorsTest
+  • get delegators list error2
+
+  Tests:  3 passed, 18 pending
+
+   RUNS  Tests\Feature\DelegatorsTest
+  • get delegators list error3
+
+  Tests:  4 passed, 17 pending
+
+   PASS  Tests\Feature\DelegatorsTest
+  ✓ get delegators list success
+  ✓ get delegators list error1
+  ✓ get delegators list error2
+  ✓ get delegators list error3
+
+   RUNS  Tests\Feature\HoldersTest
+  • get holders list success
+
+  Tests:  5 passed, 16 pending
+
+   RUNS  Tests\Feature\HoldersTest
+  • get holders list error404
+
+  Tests:  6 passed, 15 pending
+
+   PASS  Tests\Feature\HoldersTest
+  ✓ get holders list success
+  ✓ get holders list error404
+
+   RUNS  Tests\Feature\NotificationsTest
+  • get holders list success
+
+  Tests:  7 passed, 14 pending
+
+   RUNS  Tests\Feature\NotificationsTest
+  • get holders list error404
+
+  Tests:  8 passed, 13 pending
+
+   PASS  Tests\Feature\NotificationsTest
+  ✓ get holders list success
+  ✓ get holders list error404
+
+   RUNS  Tests\Feature\ValidatorsTest
+  • get validators success
+
+  Tests:  9 passed, 12 pending
+
+   RUNS  Tests\Feature\ValidatorsTest
+  • get validators error
+
+  Tests:  10 passed, 11 pending
+
+   RUNS  Tests\Feature\ValidatorsTest
+  • get validator details
+
+
+   RUNS  Tests\Feature\ValidatorsTest
+  • get validators json success
+
+  Tests:  12 passed, 9 pending
+
+   FAIL  Tests\Feature\ValidatorsTest
+  ✓ get validators success
+  ✓ get validators error
+  ✓ get validator details
+  ✕ get validators json success
+
+  Tests:  1 failed, 12 passed, 8 pending
 ```
 
-![img.png](assets/Authorization_Tests.png)
+Error in test :
 
-```bash
-dotnet test --filter DisplayName~BidController_Tests
+```
+Failed asserting that null is identical to '012bac1d0ff9240ff0b7b06d555815640497861619ca12583ddef434885416e69b'.
+
+  at C:\Users\EKON3\source\VsRepos\casper-analytics-api\vendor\phpunit\phpunit\src\Framework\Constraint\Constraint.php:119
+    115|         if (!empty($description)) {
+    116|             $failureDescription = $description . "\n" . $failureDescription;
+    117|         }
+    118|
+  > 119|         throw new ExpectationFailedException(
+    120|             $failureDescription,
+    121|             $comparisonFailure
+    122|         );
+    123|     }
+
+  1   C:\Users\EKON3\source\VsRepos\casper-analytics-api\vendor\phpunit\phpunit\src\Framework\Constraint\IsIdentical.php:102
+      PHPUnit\Framework\Constraint\Constraint::fail("")
+
+  2   C:\Users\EKON3\source\VsRepos\casper-analytics-api\vendor\phpunit\phpunit\src\Framework\Assert.php:2924
+      PHPUnit\Framework\Constraint\IsIdentical::evaluate("")
 ```
 
-![img.png](assets/BidController_Tests.png)
 
-```bash
-dotnet test --filter DisplayName~RfpController_Tests
-```
-
-![img.png](assets/RfpController_Tests.png)
 
 Requirement | Finding
 ------------ | -------------
