@@ -283,11 +283,11 @@ OSI-approved open source software license | PASS
 
 ## Contribution Policies
 
-Pull requests and Issues are enabled. However, the projects has contain a CONTRIBUTING and README policy. 
+Pull requests and Issues are enabled. And, the projects has contain a CONTRIBUTING and README policy. 
 
 Requirement | Finding
 ------------ | -------------
-OSS contribution best practices | FAIL
+OSS contribution best practices | PASS
 
 # Coding Standards
 
