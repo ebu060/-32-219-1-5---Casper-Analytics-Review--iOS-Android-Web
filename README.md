@@ -107,7 +107,7 @@ Mobile application working properly :
 ![img.png](assets/apple.jpg)
 ![img.png](assets/android.jpg)
 
-Mobile application working properly : 
+Notifications working properly : 
 
 ![img.png](assets/notification.jpg)
 ![img.png](assets/notifications.jpg)
@@ -253,7 +253,7 @@ Unit Tests - Additional path tests | PASS
 
 ### Code Documentation
 
-Reviewer observed that all critical functions of the project had low-level code documentation which could be used for automated documentation generation. Reviewer praises the OP for the intensive code-level documentation.
+Reviewer observed that all critical functions of the project had low-level code documentation which could be used for automated documentation generation.
 
 Requirement | Finding
 ------------ | -------------
@@ -261,7 +261,7 @@ Code Documented | PASS
 
 ### Project Documentation
 
-Reviewer observed that the project's README had detailed general and usage documentation, exceeding the requirements.
+The reviewer observed that the README of the project has detailed general and usage documentation.
 
 Requirement | Finding
 ------------ | -------------
@@ -269,7 +269,7 @@ Usage Documented | PASS
 
 ## Overall Conclusion on Documentation
 
-Reviewer concludes that the project has extensive overall documentation, at both the high and the low level.
+The reviewer concludes that the project has sufficient comprehensive general documentation. 
 
 # Open Source Practices
 
@@ -283,7 +283,7 @@ OSI-approved open source software license | PASS
 
 ## Contribution Policies
 
-Pull requests and Issues are enabled. However, the project does not contain a CONTRIBUTING policy. It is highly suggested that the OP should add a proper contribution policy to provide guidelines for the potential contributors as it is crucial for the sustainability of an open-source project. However, this is not a reason to fail the whole submission, in the reviewer's opinion.
+Pull requests and Issues are enabled. However, the projects has contain a CONTRIBUTING and README policy. 
 
 Requirement | Finding
 ------------ | -------------
@@ -293,11 +293,11 @@ OSS contribution best practices | FAIL
 
 ## General Observations
 
-Code is generally well-structured and readable. The project as committed to GitHub and both the unit tests and the manual tests pass.
+Code is generally well-structured and readable. The Github linked project is easy and successful to install, but an error was encountered during the installation phase of the app project. An error was received in the unit tests of the project. Manual tests pass. However, these errors do not prevent the project from being successful.
 
 # Final Conclusion
 
-The project provides the functionality described in the grant application and milestone acceptance criteria. It also meets or exceeds the standards required by the DEVxDAO. However, it is highly suggested to add a CONTRIBUTING policy to the project. Thus, in the reviewer's opinion, this submission should pass with notes.
+The project provides the functionality described in the grant application and milestone acceptance criteria. It also meets the standards required by the CRDAO. However, it is recommended to fix the package in the lib file and test error. Thus, in the reviewer's opinion, this submission should pass with notes.
 
 # Recommendation
 
