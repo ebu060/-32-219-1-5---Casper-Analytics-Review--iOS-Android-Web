@@ -112,7 +112,7 @@ Notifications working properly :
 ![img.png](assets/notification.jpg)
 ![img.png](assets/notifications.jpg)
 
-While the 'cspr.live' redirect for the 'stake with us' button in the mobile app works fine, it gives a js error in the web app.  
+While the 'cspr.live' redirect for the 'stake with us' button in the mobile app works fine but it gives a js error in the web app.  
 
 ![img.png](assets/error.PNG)
 
