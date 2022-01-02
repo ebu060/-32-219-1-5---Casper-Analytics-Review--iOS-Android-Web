@@ -112,6 +112,10 @@ Notifications working properly :
 ![img.png](assets/notification.jpg)
 ![img.png](assets/notifications.jpg)
 
+While the 'cspr.live' redirect for the 'stake with us' button in the mobile app works fine, it gives a js error in the web app.  
+
+![img.png](assets/error.PNG)
+
 ## Overall Impression of usage testing
 
 Reviewer was able to build and run the project by following the provided instructions, and test the functionality and usage on the already deployed instance. The documentation also provides sufficient installation/execution instructions for different scenarios. Reviewer observed that the project functionality meets/exceeds acceptance criteria and operates without error generally. It was seen that the production deployment didn't have a proper SSL configuration; however this does not cause a failure as it is a deployment-specific issue which can be fixed without changing the source code.
